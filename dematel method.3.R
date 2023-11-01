@@ -1,0 +1,5 @@
+library(readxl)
+Decision_matrix <- read_excel("E:/THESIS EVERYTHING/Thesis Matrix.xlsx")
+my_data <- data.matrix(Decision_matrix)
+library(dematel)
+execute_dematel(my_data)
